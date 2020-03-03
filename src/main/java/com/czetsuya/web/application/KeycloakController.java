@@ -38,7 +38,7 @@ public class KeycloakController {
     }
 
     @GetMapping(path = "/profile")
-    public Object profileOf() {
+    public Object profileOfCurrentUser() {
         return keycloakAdminClientService.getUserProfileOfLoggedUser();
     }
 }
