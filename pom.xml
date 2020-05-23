@@ -10,7 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.czetsuya</groupId>
-	<artifactId>keycloak-utils</artifactId>
+	<artifactId>keycloak-rest-admin-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>keycloak-utils</name>
 	<description>Keycloak Utilities</description>
