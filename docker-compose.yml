@@ -22,6 +22,8 @@ services:
     build:
       context: ./deployment/app
       dockerfile: Dockerfile
+    environment:
+      keycloak.secret: 332e78cb-0487-46a8-949d-7c2a09cd380c
     depends_on: 
       - keycloak
     ports:
