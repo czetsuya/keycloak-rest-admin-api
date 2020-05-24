@@ -14,13 +14,13 @@ This project demonstrates how a third-party application can communicate and mana
 5.) I created a utility class that will help us initialize a Keycloak class that we can use to communicate and manage a Keycloak instance - KeycloakAdminClientUtils.
 6.) We then need a service to get or manage information from Keycloak depending on the user's role. For instance, the user I'm using has a manage-realm role, this means that I can call almost all the API provided by Keycloak. In my example, I'm returning the user's role as well as its profile. See class KeycloakAdminClientService.
 7.) I create a REST controller class to use the service in #6 for demo. See KeycloakController.
-8.) And finally, don't forget to specify the Keycloak configuration in application.properties.
+8.) Don't forget to specify the Keycloak configuration in application.properties.
 
 ## To Run
 
-1.) Create a new realm by importing the file config/balambgarden-realm.json.
-2.) Create users by selecting Import menu / Select a file and select config/balambgarden-users-0.json. Select on Fail skip.
-3.) Install Postman and Import the collection config/keycloak-admin-api.postman_collection.json.
+1.) Create a new realm and users by importing the file config/balambgarden-realm.json.
+2.) Install Postman and Import the collection config/keycloak-admin-api.postman_collection.json.
+3.) If you are using an IDE make sure to set the environment variable keycloak.secret=332e78cb-0487-46a8-949d-7c2a09cd380c. This is use when calling the getProfile API.
 
 *Make sure that the Login request in postman is pointing to the correct Keycloak login url.
 
@@ -31,6 +31,7 @@ This project demonstrates how a third-party application can communicate and mana
 ## References
  
  - https://czetsuya-tech.blogspot.com/2020/03/keycloak-admin-rest-api-in-spring-boot.html
+ - https://hub.docker.com/r/jboss/keycloak/
 
 ## Authors
 
