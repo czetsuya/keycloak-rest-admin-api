@@ -3,7 +3,7 @@ FROM adoptopenjdk/openjdk11:alpine-jre
 LABEL author czetsuya@gmail.com
 
 # Refer to Maven build -> finalName
-ARG JAR_FILE=../../target/keycloak-rest-admin-api.jar
+ARG JAR_FILE=./keycloak-rest-admin-api.jar
 
 RUN addgroup -S tomcat && adduser -S tomcat -G tomcat
 USER tomcat
