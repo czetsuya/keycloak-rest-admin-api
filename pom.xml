@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.2.4.RELEASE</version>
+		<version>2.3.0.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.czetsuya</groupId>
@@ -17,7 +17,7 @@
 
 	<properties>
 		<java.version>11</java.version>
-		<keycloak.version>9.0.0</keycloak.version>
+		<keycloak.version>10.0.1</keycloak.version>
 	</properties>
 
 	<repositories>
@@ -26,6 +26,16 @@
 			<url>https://projectlombok.org/edge-releases</url>
 		</repository>
 	</repositories>
+
+	<build>
+		<finalName>keycloak-rest-admin-api</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 
 	<dependencyManagement>
 		<dependencies>
@@ -90,14 +100,5 @@
 			</exclusions>
 		</dependency>
 	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
 
 </project>

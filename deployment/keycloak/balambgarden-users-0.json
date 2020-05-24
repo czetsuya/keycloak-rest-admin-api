@@ -1,0 +1,43 @@
+{
+	"realm": "balambgarden",
+	"users": [
+		{
+			"id": "8b3e110d-c3be-446a-b8fb-8e66d7d9c528",
+			"createdTimestamp": 1583066352361,
+			"username": "kerri",
+			"enabled": true,
+			"totp": false,
+			"emailVerified": true,
+			"firstName": "Kerri",
+			"lastName": "Chan",
+			"credentials": [
+				{
+					"id": "b59d1afc-9f65-4b57-9001-eb9acdc8324a",
+					"type": "password",
+					"createdDate": 1583066380343,
+					"secretData": "{\"value\":\"sIN3ewt5Y4IRFJFfz1genz4OU/7bLNz849Mnyu3vxMxKwSuVEUQPG6ukH7/xErqPRFT9IITF6jLExUU/k784Nw==\",\"salt\":\"yyoav47SxeQ0H1Uhz4Xb6g==\"}",
+					"credentialData": "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\"}"
+				}
+			],
+			"disableableCredentialTypes": [],
+			"requiredActions": [],
+			"realmRoles": [
+				"offline_access",
+				"CatalogManager",
+				"uma_authorization"
+			],
+			"clientRoles": {
+				"realm-management": [
+					"view-realm",
+					"view-users"
+				],
+				"account": [
+					"view-profile",
+					"manage-account"
+				]
+			},
+			"notBefore": 0,
+			"groups": []
+		}
+	]
+}
