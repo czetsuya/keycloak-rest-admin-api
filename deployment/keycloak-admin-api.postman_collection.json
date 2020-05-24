@@ -72,12 +72,10 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost:8081/auth/realms/balambgarden/protocol/openid-connect/token?",
-					"protocol": "http",
+					"raw": "{{keycloak_url}}/auth/realms/balambgarden/protocol/openid-connect/token",
 					"host": [
-						"localhost"
+						"{{keycloak_url}}"
 					],
-					"port": "8081",
 					"path": [
 						"auth",
 						"realms",
@@ -118,6 +116,34 @@
 			"response": []
 		},
 		{
+			"name": "Hello",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/keycloak/hello",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"keycloak",
+						"hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Get Roles",
 			"request": {
 				"auth": {
@@ -133,12 +159,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/keycloak/roles",
-					"protocol": "http",
+					"raw": "{{api_url}}/keycloak/roles",
 					"host": [
-						"localhost"
+						"{{api_url}}"
 					],
-					"port": "8080",
 					"path": [
 						"keycloak",
 						"roles"
@@ -163,12 +187,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/keycloak/profile",
-					"protocol": "http",
+					"raw": "{{api_url}}/keycloak/profile",
 					"host": [
-						"localhost"
+						"{{api_url}}"
 					],
-					"port": "8080",
 					"path": [
 						"keycloak",
 						"profile"
