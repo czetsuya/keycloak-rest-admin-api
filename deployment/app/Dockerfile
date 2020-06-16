@@ -1,5 +1,7 @@
 FROM adoptopenjdk/openjdk11:alpine-jre
 
+# https://spring.io/guides/gs/spring-boot-docker/
+
 LABEL author czetsuya@gmail.com
 
 # Refer to Maven build -> finalName
