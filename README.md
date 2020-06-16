@@ -54,6 +54,8 @@ and make sure to update the value of keycloak_url and api_url to where you deplo
  - https://czetsuya-tech.blogspot.com/2019/10/docker-and-kubernetes.html
  - https://hub.docker.com/r/jboss/keycloak/
  - https://spring.io/guides/gs/spring-boot-docker/
+ - https://www.keycloak.org/documentation
+ - https://www.keycloak.org/docs-api/10.0/rest-api/index.html
 
 ## Authors
 
