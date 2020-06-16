@@ -36,6 +36,10 @@ You must have docker installed on your local machine.
 
 If will take a while during the first time as it will download Keycloak.
 
+## Run Keycloak as a Atandalone Container
+
+docker run -d --name=keycloak10 -p 8081:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=kerri jboss/keycloak:10.0.1
+
 ## Testing
 
 1.) Install Postman 
