@@ -1,6 +1,6 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-****Help me build more open-source projects by becoming my sponsor.*.*
+**Help me build more open-source projects by becoming my sponsor.*
 
 # Keycloak REST Admin API Demonstration
 
