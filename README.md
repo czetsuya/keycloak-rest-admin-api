@@ -1,5 +1,3 @@
-*If you would like to support these tutorials, you can contribute to my [Patreon account](https://patreon.com/czetsuya)
-
 # Keycloak REST Admin API Demonstration
 
 This project demonstrates how a third-party application can communicate and manage Keycloak resources via API.
