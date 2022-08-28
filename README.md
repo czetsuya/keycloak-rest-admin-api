@@ -53,7 +53,3 @@ and make sure to update the value of keycloak_url and api_url to where you deplo
  - https://spring.io/guides/gs/spring-boot-docker/
  - https://www.keycloak.org/documentation
  - https://www.keycloak.org/docs-api/10.0/rest-api/index.html
-
-## Authors
-
- * **Edward P. Legaspi** - *Java Architect* - [czetsuya](https://github.com/czetsuya)
